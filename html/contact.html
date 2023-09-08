@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="shortcut icon" type="image/png" href="../images/logosemfundo.png">
+    <title>Formulário de Contato</title>
+</head>
+<body>
+
+    <section>
+        <h2>Contato</h2>
+        <form action="https://formsubmit.co/destino.perfeito@outlook.com" method="post">
+            <input type="hidden" name="_captcha" value="false">
+            <label>Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+            <label>Mensagem</label>
+            <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5501/html/thanks.html">
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>
+
+
