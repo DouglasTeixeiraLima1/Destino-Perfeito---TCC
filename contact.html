@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/contact.css">
+    <script src="./js/index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Formulário de Contato</title>
+</head>
+<body>
+
+    <header class="header">
+
+        <nav class="navbar container1">
+
+            <a href="./index.html" class="title">Destino Perfeito</a>
+
+            <input type="checkbox" id="toggler">
+            <label for="toggler">
+                <i class="ri-menu-line"></i>
+            </label>
+            <div class="menu">
+                <ul class="list">
+                    <li><a href="./index.html" class="lin">Home</a></li>
+                    <li><a href="./about.html" class="lin">Sobre-nós</a></li>
+                    <li><a href="./contact.html" class="lin">Contate-nos</a></li>
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <a href="./index.html" title="Voltar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-left-circle-fill" id="seta" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+        </svg>
+    </a>
+
+    <section id="formulario">
+        <h2 class="fonte">Contato:</h2>
+        <form action="./php/PHPMailer-master/envio.php" method="post" onsubmit="return validarTextarea();">
+            <input type="hidden" name="_captcha" value="false">
+            <label class="fonte">Nome</label>
+            <input class="fonte" type="text" id="name" name="name" placeholder="Digite seu nome:" autocomplete="off" minlength="3" maxlength="50" pattern="[A-Za-z\s]+" required>
+            <label class="fonte">Email</label>
+            <input class="fonte" type="email" name="email" id="email" placeholder="Digite seu e-mail:" autocomplete="off" maxlength="254" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
+            <label class="fonte">Mensagem</label>
+            <textarea class="fonte" type="text" name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem:" minlength="20" maxlength="500" required></textarea>
+            <input type="hidden" name="_next" value="">
+            <button class="fonte" name="submit" id="submit" type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="final">
+        <h6>&copy; 2023 Destino Perfeito</h6>
+    </footer>
+    
+</body>
+</html>
+
+

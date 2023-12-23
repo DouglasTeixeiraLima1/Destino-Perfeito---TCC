@@ -1,0 +1,89 @@
+main{
+    flex: 1;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.main__info{
+    width: 100%;
+    max-width: 570px;
+}
+
+.main__info p{
+    font-size: 18px;
+    margin: 20px 0 28px;
+    margin-left: 5%;
+    text-align: justify;
+}
+
+.main__info div{
+    display:flex;
+    column-gap: 32px;
+}
+
+.main__info a {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: rgb(0, 0, 0);
+    margin-left: 5%;
+    transform: skew(-10deg);
+    opacity: 1;
+}
+
+.main__info a{
+    background: #ffffff;
+}
+
+.main__info a{
+    transition: 0.4s linear;
+}
+
+.main__info a:hover{
+    opacity: 0.9;
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+
+#viajante{
+    width: 550px;
+}
+
+@media only screen and (max-width: 768px) {
+    #viajante {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation: none;
+    }
+    .main__info p{
+        font-size: 15px;
+        text-align: justify;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    #botao{
+        font-size: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+        margin-bottom: 60px;
+    }
+    #logo{
+        animation: none;
+    }
+}

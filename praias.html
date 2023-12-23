@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roteiros de Viagem</title>
+    <link rel="stylesheet" href="./css/script.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <nav class="navbar container">
+
+            <a href="./index.html" class="title">Destino Perfeito</a>
+
+            <input type="checkbox" id="toggler">
+            <label for="toggler">
+                <i class="ri-menu-line"></i>
+            </label>
+            <div class="menu">
+                <ul class="list">
+                    <li><a href="./index.html" class="lin">Home</a></li>
+                    <li><a href="./about.html" class="lin">Sobre-nós</a></li>
+                    <li><a href="./contact.html" class="lin">Contate-nos</a></li>
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <a href="./index.html" title="Voltar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-left-circle-fill" id="seta" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+        </svg>
+    </a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 id="roteiros">Roteiros de Viagem:</h1>
+
+    <br>
+    <br>
+
+    <h2>#Praias Paradisíacas:</h2>
+        <p>Link de download (PDF):
+            <br>
+            <a href="./roteiros de viagem/Roteiro de Viagem - Praias Paradisíacas.pdf">- Roteiro 01</a>&nbsp;<i class="bi bi-star-fill" id="button01" onclick="toggleButtonColor('button01')"></i>
+            <br>
+            <a href="./roteiros de viagem/Roteiro de Viagem 02 - Praias Paradisíacas.pdf">- Roteiro 02</a>&nbsp;<i class="bi bi-star-fill" id="button02" onclick="toggleButtonColor('button02')"></i>
+        </p>
+
+        <br>
+
+        <h2>#Cultura e História:</h2>
+        <p>Link de download (PDF):
+            <br>
+            <a href="./roteiros de viagem/Roteiro de Viagem 03 - Cultura e História - 7 dias.pdf">- Roteiro 03</a>&nbsp;<i class="bi bi-star-fill" id="button03" onclick="toggleButtonColor('button03')"></i>
+            <br>
+            <a href="./roteiros de viagem/Roteiro de Viagem 04 - Cultura e História - 14 dias.pdf">- Roteiro 04</a>&nbsp;<i class="bi bi-star-fill" id="button04" onclick="toggleButtonColor('button04')"></i>
+        </p>
+
+        <br>
+
+        <h2>#Aventura e Entretenimento:</h2>
+        <p>Link de download (PDF):
+            <br>
+            <a href="./roteiros de viagem/Roteiro de Viagem 05 - Aventura e Entretenimento - 7 dias.pdf">- Roteiro 05</a>&nbsp;<i class="bi bi-star-fill" id="button05" onclick="toggleButtonColor('button05')"></i>
+            <br>
+            <a href="./roteiros de viagem/Roteiro de Viagem 06 - Aventura e Entretenimento - 14 dias.pdf">- Roteiro 06</a>&nbsp;<i class="bi bi-star-fill" id="button06" onclick="toggleButtonColor('button06')"></i>
+        </p>
+
+        <br>
+
+        <h2>#Culinária:</h2>
+        <p>Link de download (PDF):
+            <br>
+            <a href="./roteiros de viagem/Roteiro de Viagem 07 - Alimentação - 7  dias.pdf">- Roteiro 07</a>&nbsp;<i class="bi bi-star-fill" id="button07" onclick="toggleButtonColor('button07')"></i>
+            <br>
+            <a href="./roteiros de viagem/Roteiro de Viagem 08 - Alimentação - 14 dias.pdf">- Roteiro 08</a>&nbsp;<i class="bi bi-star-fill" id="button08" onclick="toggleButtonColor('button08')"></i>
+        </p>
+
+        <br>
+
+        <h2>#Ecologia e Preservação:</h2>
+        <p>Link de download (PDF):
+            <br>
+            <a href="./roteiros de viagem/Roteiro de Viagem 09 - Ecologia e Preservação - 7 dias.pdf">- Roteiro 09</a>&nbsp;<i class="bi bi-star-fill" id="button09" onclick="toggleButtonColor('button09')"></i>
+            <br>
+            <a href="./roteiros de viagem/Roteiro de Viagem 10 - Ecologia e Preservação - 14 dias.pdf">- Roteiro 10</a>&nbsp;<i class="bi bi-star-fill" id="button10" onclick="toggleButtonColor('button10')"></i>
+        </p>
+
+        <br>
+
+        <h2>#Eventos e Festas:</h2>
+        <p>Link de download (PDF):
+            <br>
+            <a href="./roteiros de viagem/Roteiro de Viagem 11 - Eventos e Festas - 7 dias.pdf">- Roteiro 11</a>&nbsp;<i class="bi bi-star-fill" id="button11" onclick="toggleButtonColor('button11')"></i>
+            <br>
+            <a href="./roteiros de viagem/Roteiro de Viagem 12 - Eventos e Festas - 14 dias.pdf">- Roteiro 12</a>&nbsp;<i class="bi bi-star-fill" id="button12" onclick="toggleButtonColor('button12')"></i>
+        </p>
+
+        <br>
+
+        <h2>#Hospedagem e Lazer:</h2>
+        <p>Link de download (PDF):
+            <br>
+            <a href="./roteiros de viagem/Roteiro de Viagem 13 - Hospedagem e Lazer - 7 dias.pdf">- Roteiro 13</a>&nbsp;<i class="bi bi-star-fill" id="button13" onclick="toggleButtonColor('button13')"></i>
+            <br>
+            <a href="./roteiros de viagem/Roteiro de Viagem 14 - Hospedagem e Lazer - 14 dias.pdf">- Roteiro 14</a>&nbsp;<i class="bi bi-star-fill" id="button14" onclick="toggleButtonColor('button14')"></i>
+        </p>
+
+        <br>
+
+        <h2 id="ultimo">#Estabelecimentos e Pontos Turísticos:</h2>
+        <p>Link de download (PDF):
+            <br>
+            <a href="./roteiros de viagem/Roteiro de Viagem 15 - Estabelecimentos e Pontos Turísticos  - 7 dias.pdf">- Roteiro 15</a>&nbsp;<i class="bi bi-star-fill" id="button15" onclick="toggleButtonColor('button15')"></i>
+            <br>
+            <a href="./roteiros de viagem/Roteiro de Viagem 16 - Estabelecimentos e Pontos Turísticos - 14 dias.pdf">- Roteiro 16</a>&nbsp;<i class="bi bi-star-fill" id="button16" onclick="toggleButtonColor('button16')"></i>
+        </p>
+        
+        <br>
+
+        <h2>#Destino Exclusivo:</h2>
+        <p>Link de download (PDF):
+            <br>
+            <a href="./roteiros de viagem/ROTEIRO DE VIAGEM ESPECIAL 01 - POWERPOINT PDF.pdf">- Roteiro 17</a>&nbsp;<i class="bi bi-star-fill" id="button17" onclick="toggleButtonColor('button17')"></i>
+            <br>
+            <a href="./roteiros de viagem/ROTEIRO DE VIAGEM ESPECIAL 02 - POWERPOINT PDF.pdf">- Roteiro 18</a>&nbsp;<i class="bi bi-star-fill" id="button18" onclick="toggleButtonColor('button18')"></i>
+        </p>
+
+        <script>
+            // Função genérica para lidar com a lógica do botão
+            function toggleButtonColor(buttonId) {
+                var button = document.getElementById(buttonId);
+                var currentColor = button.style.color || 'blue';
+                var newColor = (currentColor === 'blue') ? 'orange' : 'blue';
+                button.style.color = newColor;
+                document.cookie = buttonId + '=' + newColor + '; expires=Fri, 31 Dec 9999 23:59:59 GMT';
+            }
+    
+            // Função para obter o valor de um cookie pelo nome
+            function getCookie(cookieName) {
+                var name = cookieName + '=';
+                var decodedCookie = decodeURIComponent(document.cookie);
+                var cookieArray = decodedCookie.split(';');
+                for (var i = 0; i < cookieArray.length; i++) {
+                    var cookie = cookieArray[i];
+                    while (cookie.charAt(0) === ' ') {
+                        cookie = cookie.substring(1);
+                    }
+                    if (cookie.indexOf(name) === 0) {
+                        return cookie.substring(name.length, cookie.length);
+                    }
+                }
+                return null;
+            }
+    
+            // Função para aplicar a cor do cookie ao carregar a página
+            function applyColorFromCookie(buttonId) {
+                var colorFromCookie = getCookie(buttonId);
+                if (colorFromCookie) {
+                    document.getElementById(buttonId).style.color = colorFromCookie;
+                }
+            }
+    
+            // Chame a função para cada botão, ajustando os IDs
+            applyColorFromCookie('button01');
+            applyColorFromCookie('button02');
+            applyColorFromCookie('button03');
+            applyColorFromCookie('button04');
+            applyColorFromCookie('button05');
+            applyColorFromCookie('button06');
+            applyColorFromCookie('button07');
+            applyColorFromCookie('button08');
+            applyColorFromCookie('button09');
+            applyColorFromCookie('button10');
+            applyColorFromCookie('button11');
+            applyColorFromCookie('button12');
+            applyColorFromCookie('button13');
+            applyColorFromCookie('button14');
+            applyColorFromCookie('button15');
+            applyColorFromCookie('button16');
+            applyColorFromCookie('button17');
+            applyColorFromCookie('button18');
+            // Adicione chamadas para os outros botões da mesma forma
+        </script>
+
+
+
+
+        
+
+
+
+
+
+
+        <footer class="final">
+            <h6>&copy; 2023 Destino Perfeito</h6>
+        </footer>
+
+</body>
+</html>

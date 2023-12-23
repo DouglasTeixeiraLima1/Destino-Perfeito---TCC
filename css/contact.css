@@ -1,18 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
+
 body{
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: url(../images/body/log10.jpg);
+    background: url(../images/body/paisagem-de-praia-tropical-com-parasailing-no-fundo.jpg);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+/*----------------------NAVBAR / TÍTULO--------------------------------------*/
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: none;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+}
+
+.container1{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px;
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: #67b9ce;
+}
+
+.navbar .lin {
+    position: relative;
+    font-size: 1.125rem;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 2.5rem;
+}
+
+.navbar .lin::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+.navbar .lin:hover::before{
+    width: 100%;
+}
+
+nav li{
+    display: inline;
+}
+/*------------------------------------------------------------*/
+.list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.list *{
+    transition: .2s;
+}
+
+.list:hover > * {
+    opacity: 0.3;
+}
+
+.list > * {
+    pointer-events: auto;
+}
+
+.list:hover > *:hover {
+    opacity: 1;
+}
+
+#toggler,
+.navbar label {
+    display: none;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    #tnav{
+        font-size: "";
+        text-align: center;
+        margin-left: 90px;
+    }
+    .menu {
+        display: none;
+        width: 100%;
+        max-height: 0;
+        display: "";
+    }
+    .list{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        }
+    #toggler:checked ~ .menu {
+        max-height: 100%;
+    }
+    #obrigado{
+        font-size: 30px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #formulario{
+        margin-top: 80px;
+        width: 460px;
+    }
+    .paragrafo{
+        font-size: 15px;
+        text-align: center;    
+    }
+    #botaoth{
+        font-size: 10px;
+        align-items: center;
+    }
+}
+/*------------------------------------------------------------*/
+/*------------------------------------------------------------*/
+/*---------------------------TÍTULO---------------------------*/
+.title{
+    margin-right: 50px;
+    text-decoration: none;
+    text-align: left;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 525;
+    font-size: 160%;
+    font-family: 'Bricolage Grotesque';
+    transition: 0.3s linear;
+}
+
+.title{
+    transition: transform 0.3s linear;
+}
+
+.title:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+/*------------------------------------------*/
+
 section{
+    height: 700px;
+    width: 100%;
+    margin-bottom: -299px;
+    border-radius: 6px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,8 +195,10 @@ section{
 }
 section h2{
     color: #f5f5f5;
-    font-size: 2.5rem;
+    font-size: 4rem;
+    font-weight: 900;
     margin: 2rem;
+    text-transform:capitalize;
 }
 section form{
     display: flex;
@@ -69,12 +242,43 @@ form button{
     transition: all 1s;
     margin-bottom: 20px;
 }
+
 form button:hover{
     background: #f5f5f5;
     color: #101026;
     border-radius: 16px;
 }
 
+footer{
+    background-color: #67b9ce;
+    text-align: center;
+    color: #fff;
+    font-size: 200%;
+    position: absolute;
+    bottom: -300px;
+    width: 100%;
+}
+
+/*----------------Contact / Thanks -------------------------*/
+#seta{
+    cursor: pointer;
+    transition: 0.3s linear;
+    color: #000000;
+    font-size: 24px;
+    position: absolute;
+    top: 14%;
+    left: 2%;
+    }
+
+#seta{
+    transition: transform 0.3s ease;
+}
+
+#seta:hover{
+    color: #67b9ce;
+    transform: scale(1.2);
+}
+/*------------------------------------------------*/
 /*Página do Obrigado*/
 
 .main{
@@ -107,3 +311,8 @@ form button:hover{
 .btn:hover{
     border-radius: 16px;
 }
+
+.fonte{
+    font-family: sans-serif;
+}
+

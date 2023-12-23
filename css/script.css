@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../images/body/Roteiros1.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed; 
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+/*----------------------NAVBAR / TÍTULO--------------------------------------*/
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: none;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.container{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px;
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: #67b9ce;
+}
+
+.navbar .lin {
+    position: relative;
+    font-size: 1.125rem;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 2.5rem;
+}
+
+.navbar .lin::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+.navbar .lin:hover::before{
+    width: 100%;
+}
+
+nav li{
+    display: inline;
+}
+/*------------------------------------------------------------*/
+.list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.list *{
+    transition: .2s;
+}
+
+.list:hover > * {
+    opacity: 0.3;
+}
+
+.list > * {
+    pointer-events: auto;
+}
+
+.list:hover > *:hover {
+    opacity: 1;
+}
+
+#toggler,
+.navbar label {
+    display: none;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .title{
+        font-size: "";
+        margin-left: 90px;
+    }
+    .menu {
+        display: none;
+        width: 100%;
+        max-height: 0;
+        display: "";
+    }
+    .list{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        }
+    #toggler:checked ~ .menu {
+        max-height: 100%;
+    }
+    #roteiros{
+        text-decoration: underline;
+    }
+    
+    #ultimo{
+        margin-right: 10%;  
+    }
+    body{
+        background:url('../images/body/Roteiros2.png') no-repeat; 
+        background-size: cover;
+        background-position: center;
+        background-attachment:fixed; 
+        margin: 0%;
+        padding: 0%;
+    }
+}
+/*------------------------------------------------------------*/
+/*------------------------------------------------------------*/
+/*---------------------------TÍTULO---------------------------*/
+.title{
+    margin-right: 50px;
+    text-decoration: none;
+    text-align: left;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 525;
+    font-size: 160%;
+    font-family: 'Bricolage Grotesque';
+    transition: 0.3s linear;
+}
+
+.title{
+    transition: transform 0.3s linear;
+}
+
+.title:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+/*------------------------------------------*/
+
+h1{
+    text-align: center;
+    color: #000000;
+    font-weight: 900;
+    font-size: 40px;
+    text-transform:uppercase;
+    text-decoration:overline;
+    line-height: 1;
+}
+
+h2{
+    text-align: justify;
+    margin-left: 6%;
+    color: #000000;
+}
+/*------------------------------------------------*/
+#seta{
+    cursor: pointer;
+    transition: 0.3s linear;
+    color: #000000;
+    font-size: 24px;
+    position: absolute;
+    top: 14%;
+    left: 2%;
+    }
+
+#seta{
+    transition: transform 0.3s ease;
+}
+
+#seta:hover{
+    color: #67b9ce;
+    transform: scale(1.2);
+}
+
+footer{
+    background-color: #67b9ce;
+    text-align: center;
+    color: #fff;
+    font-size: 200%;
+    position: relative;
+    bottom: -100px;
+    width: 100%;
+}
+
+
+p{
+    margin-left: 6%;
+}
+
+a{
+    text-decoration: none;
+    color: #2c38e2;
+}
+
+/*------------------------------------------------------------*/
+
+.bi-star-fill{
+    cursor: pointer;
+    color: #110dfd;
+    }
+
+#roteiros{
+    margin-top: 90px;
+}
+

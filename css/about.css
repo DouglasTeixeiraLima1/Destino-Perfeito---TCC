@@ -15,8 +15,152 @@ body{
     background: url('../images/body/4853433.jpg') no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment:fixed;
+}
+/*----------------------NAVBAR / TÍTULO--------------------------------------*/
+.header{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: none;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
 
+.container{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px;
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: #67b9ce;
+}
+
+.navbar .lin {
+    position: relative;
+    font-size: 1.125rem;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 2.5rem;
+}
+
+.navbar .lin::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+
+.navbar .lin:hover::before{
+    width: 100%;
+}
+
+nav li{
+    display: inline;
+}
+/*------------------------------------------------------------*/
+.list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.list *{
+    transition: .2s;
+}
+
+.list:hover > * {
+    opacity: 0.3;
+}
+
+.list > * {
+    pointer-events: auto;
+}
+
+.list:hover > *:hover {
+    opacity: 1;
+}
+
+#toggler,
+.navbar label {
+    display: none;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .title{
+        font-size: "";
+        text-align: center;
+        margin-left: 90px;
+    }
+    .menu {
+        display: none;
+        width: 100%;
+        max-height: 0;
+        display: "";
+    }
+    .list{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        }
+    #toggler:checked ~ .menu {
+        max-height: 100%;
+    }
+    .maps{
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid #67b9ce;
+    }
+}
+/*------------------------------------------------------------*/
+/*------------------------------------------------------------*/
+/*---------------------------TÍTULO---------------------------*/
+.title{
+    margin-right: 50px;
+    text-decoration: none;
+    text-align: left;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 525;
+    font-size: 160%;
+    font-family: 'Bricolage Grotesque';
+    transition: 0.3s linear;
+}
+
+.title{
+    transition: transform 0.3s linear;
+}
+
+.title:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+/*------------------------------------------*/
 h1{
     text-align: center;
     color:#000000;
@@ -33,36 +177,38 @@ h2{
     text-align: justify;
     text-justify: inter-word;
     max-width: 100%;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 8%;
+    margin-right: 8%;
     
 }
 
-.botao{
-    outline: none;
+details{
+    text-align: justify;
+    text-justify: inter-word;
+    max-width: 100%;
+    margin-left: 8%;
+    margin-right: 8%;
+    color: #000000;
 }
 
-.btn {
-    padding: 15px 55px;
-    background: rgb(0, 0, 0);
-    color: #ffffff;
-    font-size: 18px;
-    transition: all 0.5s;
-    text-align: center;
-    justify-content: center;
-    display: block;
-    margin: 0 auto;
-    cursor: pointer;
-}
-.btn:hover{
-    border-radius: 16px;
-    background-color: transparent;
-    color: rgb(0, 0, 0);
+.sublihado {
+    text-decoration: underline;
 }
 
-.link{
-    text-decoration: none;
+summary{
+    background-color: rgb(28, 172, 216);
+    width: 40%;
+    border-radius: 1%;
 }
+/*--------------------------------------------*/
+@media screen and (max-width: 768px){
+    summary{
+        width: 100%;
+        flex-direction: column;
+        border-radius: 0%;
+    }
+  }
+
 /*-----------------------BOTÕES REDES SOCIAIS----------------------------------*/
 
 .wrapper{
@@ -95,6 +241,7 @@ h2{
 }
 
 .wrapper .tooltip {
+    width: 170%;
     position: absolute;
     top: 0;
     font-size: 0.8rem;
@@ -144,14 +291,57 @@ h2{
     background: rgb(204, 52, 52);
   }
 
-.imagem{
-    display: block;
-    margin: 0 auto;
-    width: 45%;
-    background-size: cover; 
-    border-radius: 20px;
-  }
-
   .wrapper a{
     color: #000000;
   }
+
+  .maps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+  }
+
+  .logo{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+ }
+/*------------------------------------------------*/
+ @media screen and (max-width: 768px){
+    .logo{
+        width: 50%;
+        flex-direction: column;
+        border-radius: 0%;
+    }
+  }
+/*------------------------------------------------*/
+  footer{
+    background-color: #67b9ce;
+    text-align: center;
+    color: #fff;
+    font-size: 200%;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+}
+
+#seta{
+    font-size: 24px;
+    margin-left: 2%;
+    margin-top: 2%;
+    cursor: pointer;
+    transition: 0.3s linear;
+    color: #000000;
+}
+
+#seta{
+    transition: transform 0.3s ease;
+}
+
+#seta:hover{
+    color: #67b9ce;
+    transform: scale(1.2);
+}
